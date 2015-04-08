@@ -8,12 +8,12 @@ class App < Sinatra::Base
 
     Thread.new do
       sleep 10
-      async.getResponse.getOutputStream.println("Background thing!")
+      async.getResponse.getOutputStream.println("<p>Background thing!</p>")
       async.getResponse.getOutputStream.flush
       async.complete
     end
 
-    "sync parts"
+    "<p>Synchronous part!</p>"
   end
 
   run! if app_file == $0
