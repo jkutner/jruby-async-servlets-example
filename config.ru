@@ -8,7 +8,7 @@ class App < Sinatra::Base
 
     Thread.new do
       sleep 10
-      async.getResponse.getOutputStream.println("<p>Background thing!</p>")
+      async.getResponse.getOutputStream.println("<p>Asynchronous thing!</p>")
       async.getResponse.getOutputStream.flush
       async.complete
     end
