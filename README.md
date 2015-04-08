@@ -37,3 +37,8 @@ You can deploy this project to Heroku by installing the Heroku Toolbelt, and run
 $ heroku create
 $ mvn heroku:deploy
 ```
+
+## Why should I care?
+
+Normal requests block until streaming is done. This example uses Servlet 3.x to
+unblock the request thread so that other requests can be handled.
