@@ -1,3 +1,4 @@
+require 'java'
 require 'sinatra'
 
 class App < Sinatra::Base
@@ -15,8 +16,6 @@ class App < Sinatra::Base
 
     "<p>Synchronous part!</p>"
   end
-
-  run! if app_file == $0
 end
 
 run App
