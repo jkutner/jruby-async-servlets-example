@@ -1,4 +1,3 @@
-require 'java'
 require 'sinatra'
 
 class App < Sinatra::Base
