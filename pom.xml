@@ -19,10 +19,10 @@
         <configuration>
           <appName>jkutner-test</appName>
           <processTypes>
-            <web>java -Djetty.port=${PORT} -jar jruby-servlets.war</web>
+            <web>java -Djetty.port=${PORT} -jar *.war</web>
           </processTypes>
           <includes>
-            <include>jruby-servlets.war</include>
+            <include>jruby-non-blocking-servlets-example.war</include>
           </includes>
         </configuration>
       </plugin>
