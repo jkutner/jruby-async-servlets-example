@@ -2,7 +2,7 @@
 
 This project demonstrates how to use non-blocking IO with Servlet 3.1 and JRuby
 
-To try it, clone the app and then these commands:
+To try it, clone the app and then run these commands:
 
 ```sh-session
 $ bundle install
