@@ -22,7 +22,7 @@
             <web>java -Djetty.port=${PORT} -jar *.war</web>
           </processTypes>
           <includes>
-            <include>jruby-non-blocking-servlets-example.war</include>
+            <include>jruby-async-servlets-example.war</include>
           </includes>
         </configuration>
       </plugin>

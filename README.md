@@ -1,4 +1,4 @@
-## Non-Blocking IO with JRuby Servlets
+## Asynchronous Request Processing with JRuby Servlets
 
 This project demonstrates how to use non-blocking IO with Servlet 3.1 and JRuby
 
