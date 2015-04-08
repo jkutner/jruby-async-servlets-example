@@ -14,10 +14,10 @@ Your bundle is complete!
 Use `bundle show [gemname]` to see where a bundled gem is installed.
 
 $ bundle exec warble war
-rm -f jruby-servlets.war
-Creating jruby-servlets.war
+rm -f jruby-async-servlets-example.war
+Creating jruby-async-servlets-example.war
 
-$ java -jar jruby-servlets.war
+$ java -jar jruby-async-servlets-example.war
 2015-04-08 09:16:51.018:INFO:oejs.Server:jetty-8.y.z-SNAPSHOT
 2015-04-08 09:16:51.056:INFO:oejw.WebInfConfiguration:Extract jar:file:/Users/jkutner/workspace/heroku/kissaten/jruby-servlets/jruby-servlets.war!/ to /private/var/folders/mk/w8gpswvs1tl70bhj60s4kvy40000gn/T/warbler4069300530771564038webroot/jruby-servlets.war/work/jetty-0.0.0.0-8080-jruby-servlets.war-_-any-/webapp
 2015-04-08 09:16:52.579:INFO:/:INFO: jruby 1.7.19 (1.9.3p551) 2015-01-30 32f5af0 on Java HotSpot(TM) 64-Bit Server VM 1.8.0_31-b13 +jit [darwin-x86_64]
