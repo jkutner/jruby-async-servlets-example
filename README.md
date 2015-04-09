@@ -35,6 +35,7 @@ You can deploy this project to Heroku by installing the Heroku Toolbelt, and run
 
 ```sh-session
 $ heroku create
+# manually put the app name in the pom.xml
 $ mvn heroku:deploy
 ```
 
