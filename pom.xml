@@ -5,12 +5,12 @@
   http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example</groupId>
-  <artifactId>jruby-servlets-example</artifactId>
+  <artifactId>jruby-async-servlets-example</artifactId>
   <version>0.1-SNAPSHOT</version>
   <name>Simple Web Application</name>
 
   <build>
-    <finalName>travis-heroku-java-example</finalName>
+    <finalName>jruby-async-servlets-example</finalName>
     <plugins>
       <plugin>
         <groupId>com.heroku.sdk</groupId>

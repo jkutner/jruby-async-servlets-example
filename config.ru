@@ -7,7 +7,7 @@ class App < Sinatra::Base
     async = env['java.servlet_request'].startAsync
 
     Thread.new do
-      sleep 10
+      sleep 10 # something that takes a long time
       async.getResponse.getOutputStream.println("<p>Asynchronous thing!</p>")
       async.getResponse.getOutputStream.flush
       async.complete
