@@ -43,3 +43,25 @@ $ mvn heroku:deploy
 
 Normal requests block until streaming is done. This example uses Servlet 3.x to
 unblock the request thread so that other requests can be handled.
+
+Here's the interesting part:
+
+```ruby
+get '/' do
+  response.headers["Transfer-Encoding"] = "chunked"
+  async = env['java.servlet_request'].startAsync
+
+  Thread.new do
+    sleep 10 # something that takes a long time
+    async.getResponse.getOutputStream.println("<p>Asynchronous thing!</p>")
+    async.getResponse.getOutputStream.flush
+    async.complete
+  end
+
+  "<p>Synchronous part!</p>"
+end
+```
+
+## License
+
+MIT
