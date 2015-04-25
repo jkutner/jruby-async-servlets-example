@@ -15,7 +15,7 @@
       <plugin>
         <groupId>com.heroku.sdk</groupId>
         <artifactId>heroku-maven-plugin</artifactId>
-        <version>0.3.6</version>
+        <version>0.3.7</version>
         <configuration>
           <appName>jkutner-test</appName>
           <processTypes>
